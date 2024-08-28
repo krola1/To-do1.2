@@ -3,7 +3,7 @@ const addButton = document.querySelector(".add-item");
 const clearButton = document.querySelector(".clear-list");
 const inputField = document.getElementById("input-field");
 const listHeader = document.getElementById("list-header");
-//defines variables for use in script
+//defines main array
 let toDoList = [];
 // let counter = 0; //time will tell if i can do without this
 // functions
@@ -13,7 +13,6 @@ const clearInputField = () => {
 const clearHTML = () => {
   listHeader.innerHTML = "";
 };
-/// big functions
 const fromFieldToArray = () => {
   fieldValue = inputField.value;
   toDoList.push(fieldValue);
